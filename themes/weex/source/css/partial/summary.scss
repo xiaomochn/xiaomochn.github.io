@@ -1,0 +1,66 @@
+@import "../variable.scss";
+
+.summary {
+  -webkit-overflow-scrolling: touch;
+  font-size: 15px;
+  flex: 1;
+
+  ul, li , ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  a {
+    &.current {
+      border: none;
+      color: $text-blue;
+    }
+    &:hover {
+      color: $text-blue;
+    }
+  }
+
+  h3.chapter-title {
+    font-size: 1.2em;
+    a {
+      color: #333;
+    }
+  }
+
+  ul.chapter {
+    margin-left: 15px;
+    li {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.doc-summary {
+   & > li {
+    margin-bottom: 30px;
+  }
+}
+
+.lang-en .summary h3.chapter-title{
+  font-weight: 600;
+}
+
+.sponsor {
+  flex: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sponsor-poster {
+  display: block;
+  width: 140px;
+}
+.sponsor-title {
+  color: #7f8c8d;
+  font-size: 10px;
+  text-align: center;
+}

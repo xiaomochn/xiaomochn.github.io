@@ -1,0 +1,136 @@
+@import "../variable.scss";
+
+$header-bg: #F2F2F2;
+$menu-active-bg: #EEE;
+
+#header {
+  width: 100%;
+  height: $header-height;
+  padding: 0 40px;
+  position: absolute;
+  background-color: $header-bg;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.05);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  ul, li , ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  #logo {
+    display: block;
+
+    img {
+      width: 78px;
+      height: 38px;
+    }
+  }
+
+  .navbar {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #mobile-nav {
+    display: none;
+    height: $header-height;
+    align-items: center;
+
+    #logo {
+      margin: 0 auto;
+    }
+
+    .btn-menu {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+
+    & > ul {
+      display: flex;
+      justify-content: space-between;
+      height: $header-height;
+      line-height: $header-height;
+    }
+
+    li > a {
+      display: block;
+      height: 100%;
+      font-size: 1.16em;
+      color: $text-light-black;
+      padding: 0 16px;
+    }
+  }
+
+  .links {
+    & > li > a:hover {
+      color: $text-blue;
+      background-color: $menu-active-bg;
+    }
+
+    & > li.current > a {
+      color: $text-blue;
+      border-bottom: .2em solid $text-blue;
+    }
+
+    > li {
+      margin: 0 1px;
+    }
+  }
+
+  .tools {
+    > li {
+      margin-left: 30px;
+      position: relative;
+    }
+    .search-form {
+      width: 140px;
+    }
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      width: 200px;
+      left: -60%;
+      top: 98%;
+      border: none;
+      padding: 10px 0;
+
+      a {
+        font-size: 15px;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .select-lang {
+    width: 90px;
+  }
+
+  .select-lang .dropdown-toggle {
+    color: #00293D;
+  }
+
+  .select-lang .dropdown-menu {
+    width: 105px;
+    left: 0;
+  }
+
+  .caret {
+    display: inline-block;
+    margin-left: 2px;
+    @include triangle-down($border-gray, 4px);
+  }
+}
