@@ -1,6 +1,6 @@
-- [**白皮书**](xiaomochn/packages/whitepage.md)
+- [**拉卡拉移动前端开发技术白皮书**](xiaomochn/packages/whitepage.md)
 - 布局
-    - [wxc-button 按钮](cn/packages/wxc-button/)
+    - [例子1](xiaomochn/packages/wxc-button/README_cn.md)
     - [wxc-cell 单元格](cn/packages/wxc-cell/)
     - [wxc-ep-slider 神奇滑动](cn/packages/wxc-ep-slider/)
     - [wxc-lightbox 幻灯片](cn/packages/wxc-lightbox/)

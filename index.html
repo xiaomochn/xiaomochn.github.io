@@ -9,6 +9,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="http://h5.m.taobao.com/trip/weex-ui/index.min.css">
+
 </head>
 
 <body>
@@ -23,12 +24,12 @@
     loadSidebar: 'xiaomochn/packages/home/_sidebar.md',
     loadNavbar: 'xiaomochn/packages/home/_navbar.md',
     auto2top: true,
-    nameLink: {
-      '/cn/': '#/cn/',
-      '/': '#/'
-    },
+    // nameLink: {
+    //   '/cn/': '#/cn/',
+    //   '/': '#/'
+    // },
     basePath: location.port === '3000' ? '/' : '/',
-    repo: 'alibaba/weex-ui',
+    // repo: 'alibaba/weex-ui',
     ga: 'UA-57207999-2',
     plugins: [
       function (hook, vm) {
@@ -36,9 +37,10 @@
           // var url = 'https://github.com/alibaba/weex-ui/blob/master/' + vm.route.file;
           // var github = "<div  data-tooltip-title=\"Star it if you like\" data-tooltip-position=\"top\" class=\"tool-tip\"><iframe src=\"https://ghbtns.com/github-btn.html?user=alibaba&amp;repo=weex-ui&amp;type=watch&amp;count=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"110\" height=\"20\" style='margin:0 10px -6px'></iframe></div>";
 
-          var editHtml = '<a href= data-tooltip-title=\"Correct this doc\" data-tooltip-position=\"top\" class=\"tool-tip\" target=\"_blank\"><img class=\"emoji\" src=\"https://img.alicdn.com/tfs/TB1ica2lcLJ8KJjy0FnXXcFDpXa-128-128.png\" alt=\"Edit\"></a>';
-          return "<div class=\"tool-docs-header\">"
-            + editHtml
+          // var editHtml = '<a href= data-tooltip-title=\"Correct this doc\" data-tooltip-position=\"top\" class=\"tool-tip\" target=\"_blank\"><img class=\"emoji\" src=\"https://img.alicdn.com/tfs/TB1ica2lcLJ8KJjy0FnXXcFDpXa-128-128.png\" alt=\"Edit\"></a>';
+          return
+          "<div class=\"tool-docs-header\">"
+            // + editHtml
             // + github
             + "</div>"
             + '\n\n'

@@ -21,16 +21,6 @@
     "Ul Components",
     "UI library"
   ],
-  "author": [
-    {
-      "name": "拔赤",
-      "email": "lijing00333@163.com"
-    },
-    {
-      "name": "Tw93",
-      "email": "tw93@qq.com"
-    }
-  ],
   "license": "MIT",
   "devDependencies": {
     "anywhere": "^1.5.0",
